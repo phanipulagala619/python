@@ -1,5 +1,3 @@
-
-
 def cellcounter(grid,i,j,maxcount,a,a1):
     count=1
     grid[i][j]=0
@@ -27,16 +25,11 @@ grid = []
 for grid_i in range(n):
     grid_t = list(map(int, input().strip().split(' ')))
     grid.append(grid_t)
-print(grid)
 a=len(grid)
 a1=len(grid[0])
-print(a)
-print(a1)
 for i in range(len(grid)):
     for j in range(len(grid[0])):
         if (grid[i][j]==1):
             c=cellcounter(grid,i,j,maxcount,a,a1)
             arr.append(c)
-
-print(arr)
 print(max(arr))
